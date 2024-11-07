@@ -44,9 +44,31 @@
 
     <script>
         function gerarCargo() {
-            const titulos = ["Head", "Chief", "Senior", "Vice", "Executive", "Chairman", "Founder", "Grandmaster"];
-            const areas = ["Visionary", "Operations", "Happiness", "Synergy", "Future-Proofing", "Vibes", "Metrics", "Sustainability"];
-            const detalhes = ["of Excellence", "Specialist", "Coordinator Extraordinaire", "for Strategic Growth", "of Thought Leadership"];
+const titulos = [
+    "Head", "Chief", "Senior", "Vice", "Executive", "Chairman", 
+    "Founder", "Grandmaster", "Lord", "Supreme", "Global", "Master", 
+    "Principal", "Lead", "Patriarch", "Wizard", "Imperial", "Noble", 
+    "Elite"
+];
+
+const areas = [
+    "Visionary", "Operations", "Happiness", "Synergy", "Future-Proofing", 
+    "Vibes", "Metrics", "Sustainability", "Innovation", "Optimization", 
+    "Alignment", "Culture", "People", "Transformation", "Intelligence", 
+    "Dreams", "Wellness", "Success", "Alchemy", "Prosperity", "Inspiration", 
+    "Luxury", "Growth", "Awesomeness", "Aesthetics"
+];
+
+const detalhes = [
+    "of Excellence", "Specialist", "Coordinator Extraordinaire", 
+    "for Strategic Growth", "of Thought Leadership", "of Prestige", 
+    "Advisor", "Architect", "Virtuoso", "Enthusiast", "Maven", 
+    "Guru", "of Supreme Knowledge", "in Elegance", "of Infinite Wisdom", 
+    "Connoisseur", "of Global Influence", "of Splendor", "Maestro", 
+    "of Legendary Insights", "of Opulence", "Curator", "of Prosperity", 
+    "of Luxurious Standards"
+];
+
 
             const titulo = titulos[Math.floor(Math.random() * titulos.length)];
             const area = areas[Math.floor(Math.random() * areas.length)];
