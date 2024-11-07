@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Cargos</title>
+</head>
+<body>
+    <h1>Gerador de Cargos Chiques e Engraçados</h1>
+    <button onclick="gerarCargo()">Gerar Cargo</button>
+    <p id="cargo"></p>
+
+    <script>
+        function gerarCargo() {
+            const titulos = ["Head", "Chief", "Senior", "Vice", "Executive", "Chairman", "Founder", "Grandmaster"];
+            const areas = ["Visionary", "Operations", "Happiness", "Synergy", "Future-Proofing", "Vibes", "Metrics", "Sustainability"];
+            const detalhes = ["of Excellence", "Specialist", "Coordinator Extraordinaire", "for Strategic Growth", "of Thought Leadership"];
+
+            const titulo = titulos[Math.floor(Math.random() * titulos.length)];
+            const area = areas[Math.floor(Math.random() * areas.length)];
+            const detalhe = detalhes[Math.floor(Math.random() * detalhes.length)];
+
+            document.getElementById("cargo").textContent = `${titulo} ${area} ${detalhe}`;
+        }
+    </script>
+</body>
+</html>
